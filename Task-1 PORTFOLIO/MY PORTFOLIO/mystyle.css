@@ -1,0 +1,375 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+:root{
+  --big-color: #020312;
+  --text-color: #b1a6a6;
+  --main-color: #eb4a4a;
+  --second-color: rgb(243, 240, 240);
+  --other-color: #12141c;
+  --h1-font: 5.2rem;
+  --h2-font: 3.5rem;
+  --p-font: 1.1rem;
+
+}
+body{
+  background: var(--big-color);
+  color: var(--text-color); 
+  background: url('desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(52, 52, 56);
+}
+
+header{
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 22px 16%;
+  border-bottom: 1px solid transparent;
+  transition: all 40 ease;
+}
+.logo img{
+  width: 35px;
+  height: auto;
+}
+.navbar{
+  display: flex;
+}
+.navbar a{
+  color: var(--second-color);
+  font-size: var(--p-font);
+  font-weight: 600;
+   padding: 10px 10px;
+  margin: 0 2px;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  transition: all 40 ease;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar li :hover{
+  background: rgb(250, 244, 229);
+  color: #362b0d;
+}
+#menu-icon{
+  font-size: 36px;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+}
+section{
+  padding: 160px 16% 90px;
+}
+.home{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.home-text h1{
+  margin: 20px 0;
+  font-size: var(--h1-font);
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: 2px;
+
+}
+
+span{
+  color: var(--main-color);
+}
+.home-text h4{
+  color: var(--main-color);
+  font-size: 24px;
+  font-weight: 600;
+}
+.home-text h3{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 3rem ;
+}
+.btn{
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 0.5rem;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  background:rgb(194, 193, 118);
+  color: #422b16;
+  border: 2px black;
+  transition: all 40 ease;
+  transition: background-color 0.50s;
+}
+.btn:hover{
+transform: scale(1.01) translateY(-5px);
+background: #422b16;
+color:rgb(194, 193, 118) ;
+
+}
+header.sticky{
+  padding:  10px 16%;
+  background: var(--big-color);
+  border-bottom: 1px solid #0e1630;
+  transition: 3s;
+}
+
+/*------ Styling for About Me Section-----*/
+.boxes{
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  flex-direction:row;
+ 
+}
+.about {
+ flex: 0  0 calc(5% - 5px); 
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.about-text {
+ align-items: center;
+ text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #be2222;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about p {
+  
+  font-size: 1rem;
+  color: #dacbcb;
+  align-items: center;
+  margin: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #796e34;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #d6dbb8;
+  color: #422b16;
+}
+
+/* ----Styling for the "Skills" section------- */
+.skills {
+  flex: 0 0 calc(30% - 20px); 
+  background-color: rgba(0, 0, 0, 0.2);
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  border: 2px solid #98e706;
+  border-radius: 10px;
+  margin: 10px; 
+  transition: all 40 ease;
+  width: 500px;
+}
+
+.skills h2 {
+  font-size: 1.9rem;
+  color: #be2222;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skill {
+  padding: 5px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+  text-align: center;
+  align-items: end;
+  
+}
+
+.skill h3 {
+  font-size: 1.3rem;
+  color:#c7bd2c ;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.skill p {
+  font-size: 1rem;
+  color: #f5eded;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*---- Projects section------ */
+.projects {
+  margin-left: 100px;
+  margin-right: 100PX;
+  text-align: center;
+  padding: 40px;
+  border: 2px solid #f6fa05;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.projects h2 {
+  font-size: 2.2rem;
+  color: #be2222;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.project {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #968c09;
+  border-radius: 10px;
+  text-align: center;
+  background: transparent;
+}
+
+.project img {
+  width: 100%;
+  max-width: 600px;
+  max-height: 400px;
+  height: auto;
+}
+
+.project h3 {
+  padding-top: 5px;
+  font-size: 1.5rem;
+  color:#abc51a;
+  margin-top: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.project p {
+  padding: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+/* CSS for the CV Upload button */
+.portfolio{
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid #a7ff05;
+  margin-left: 200px;
+  margin-right: 200px;
+
+}
+h2{
+  font-size: 2rem;
+  color: #be2222;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.download-button {
+  display: inline-block;
+  background-color: #796e34;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  }
+.portfolio .download-button a :hover{
+transition: all 40 ease;
+background: #422b16;
+color:rgb(194, 193, 118) ;
+}
+
+/* CSS for the Contact Me section */
+.contact {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid #bafc07;
+}
+
+.contact h2 {
+  font-size: 2.2rem;
+  color: #be2222;
+
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.contact form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #796e34;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  border: #000000;
+  transition: background-color 0.3s;
+}
+.cta-button:hover{
+  transition: all 40 ease;
+background: #422b16;
+color:rgb(194, 193, 118) ;
+}
+
+
+
+
